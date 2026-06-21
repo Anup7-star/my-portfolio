@@ -200,8 +200,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 lucide.createIcons();
             }
             
-            // Simulate network request
-            setTimeout(() => {
+            // Build the URL-encoded data for Google Forms
+            const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeK-fbfL6iZMxka3CzDgFzyHwIom7gPa9iVCu1ETzrzi-59ng/formResponse';
+            const formData = new URLSearchParams();
+            formData.append('entry.68205051', name);
+            formData.append('entry.557332429', email);
+            formData.append('entry.1086262081', subject);
+            formData.append('entry.1073645259', message);
+
+            // Send the request via fetch with mode: 'no-cors'
+            fetch(googleFormUrl, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: formData.toString()
+            })
+            .then(() => {
                 // Restore button
                 formSubmitBtn.disabled = false;
                 formSubmitBtn.innerHTML = originalBtnContent;
@@ -212,9 +228,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Show success message
                 showMessage('Message sent successfully! I will get back to you soon.', 'success');
                 
+                // Open confirmation modal
+                const modal = document.getElementById('contact-modal');
+                if (modal) {
+                    modal.classList.add('active');
+                }
+                
                 // Reset form
                 contactForm.reset();
-            }, 1800);
+            })
+            .catch((error) => {
+                console.error('Error submitting form:', error);
+                
+                // Restore button
+                formSubmitBtn.disabled = false;
+                formSubmitBtn.innerHTML = originalBtnContent;
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+                
+                showMessage('Something went wrong. Please try again or email me directly.', 'error');
+            });
+        });
+    }
+
+    // Confirmation Modal Close Logic
+    const modal = document.getElementById('contact-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    if (modal && modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+        
+        // Close modal when clicking outside the card
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
         });
     }
 
@@ -223,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         formMessage.innerText = text;
         formMessage.className = `form-message ${type}`;
+        formMessage.style.display = 'block'; // Ensure the element is visible
         
         // Auto hide error after 5s, success remains visible longer
         if (type === 'error') {
