@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anup S | Backend Developer & B.Tech CSE Student</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Anup S, a 2nd year B.Tech Computer Science (Core) student at VIT Chennai and Backend Developer Intern at Caytm Technologies. Building scalable backend solutions, REST APIs, and database models.">
+    <meta name="keywords" content="Anup S, Backend Developer, Caytm Technologies, VIT Chennai, Vellore Institute of Technology, BTech CSE, Java Developer, Node.js, Kozhikode, Chennai, Software Engineer, Portfolio">
+    <meta name="author" content="Anup S">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anup S | Backend Developer & B.Tech CSE Student">
+    <meta property="og:description" content="Backend Developer Intern @ Caytm Technologies & B.Tech CSE Student @ VIT Chennai. Discover projects, skills, and backend engineering expertise.">
+    <meta property="og:url" content="https://linkedin.com/in/anup-s-8a55b2371">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide Icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Background Elements -->
+    <div class="glow-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <!-- Sticky Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="gradient-text">&lt;AnupS /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-glow fade-in-up">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">Backend Developer Intern @ Caytm Technologies</span>
+                    </div>
+                    <h1 class="hero-title fade-in-up delay-1">
+                        Building Scalable <br>
+                        <span class="gradient-text">Backend Architectures</span>
+                    </h1>
+                    <p class="hero-subtitle fade-in-up delay-2">
+                        Hi, I'm <strong class="highlight-text">Anup S</strong>, a B.Tech Computer Science Core student at <span class="highlight-text">VIT Chennai</span>. Passionate about server-side engineering, database management, and crafting robust APIs that power seamless user experiences.
+                    </p>
+                    <div class="hero-ctas fade-in-up delay-3">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore My Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in-up delay-2">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">anups.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code class="language-json">{
+  <span class="key">"name"</span>: <span class="val">"Anup S"</span>,
+  <span class="key">"role"</span>: <span class="val">"Backend Developer Intern"</span>,
+  <span class="key">"company"</span>: <span class="val">"Caytm Technologies"</span>,
+  <span class="key">"education"</span>: {
+    <span class="key">"university"</span>: <span class="val">"VIT Chennai"</span>,
+    <span class="key">"degree"</span>: <span class="val">"B.Tech CSE Core"</span>,
+    <span class="key">"year"</span>: <span class="val">"2nd Year (2025 - 2029)"</span>
+  },
+  <span class="key">"skills"</span>: [
+    <span class="val">"Java"</span>, <span class="val">"Node.js"</span>, <span class="val">"REST APIs"</span>,
+    <span class="val">"PostgreSQL"</span>, <span class="val">"Docker"</span>, <span class="val">"System Design"</span>
+  ],
+  <span class="key">"location"</span>: <span class="val">"Kozhikode, KL & Chennai, TN"</span>
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me">
+                <i data-lucide="chevrons-down" class="bounce"></i>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">My Journey</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-cards">
+                        <div class="info-card glass-card">
+                            <i data-lucide="graduation-cap" class="card-icon cyan"></i>
+                            <h3>Education</h3>
+                            <p><strong>B.Tech in Computer Science & Eng.</strong></p>
+                            <p class="card-sub">VIT Chennai (2025 - 2029)</p>
+                            <p class="card-desc">Focusing on algorithms, data structures, and database systems.</p>
+                        </div>
+                        
+                        <div class="info-card glass-card">
+                            <i data-lucide="briefcase" class="card-icon indigo"></i>
+                            <h3>Internship</h3>
+                            <p><strong>Backend Developer Intern</strong></p>
+                            <p class="card-sub">Caytm Technologies</p>
+                            <p class="card-desc">Working on server-side modules, core business logic, and API efficiency.</p>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <i data-lucide="palette" class="card-icon violet"></i>
+                            <h3>Campus Life</h3>
+                            <p><strong>Creative Club Member</strong></p>
+                            <p class="card-sub">French Club VITC (Feb 2026 - Present)</p>
+                            <p class="card-desc">Collaborating on events, visual design elements, and cultural activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-bio glass-card">
+                        <h3>Who I Am</h3>
+                        <p class="bio-text">
+                            I am a student developer driven by the mechanics of backend servers. I enjoy transforming logical ideas into efficient, clean code. Currently, as a sophomore in CSE Core at <span class="text-glow">VIT Chennai</span>, I combine structural academic theory with hands-on enterprise backend development during my internship at <span class="text-glow">Caytm Technologies</span>.
+                        </p>
+                        <p class="bio-text">
+                            My focus centers on constructing robust API frameworks, optimizing complex database workflows, and automating development tasks. I thrive on debugging complex logical issues and ensuring system reliability.
+                        </p>
+                        
+                        <div class="bio-metadata">
+                            <div class="meta-item">
+                                <span class="meta-label">Location:</span>
+                                <span class="meta-val">Kozhikode, Kerala & Chennai, India</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Email:</span>
+                                <span class="meta-val"><a href="mailto:anups.cse@outlook.com">anups.cse@outlook.com</a></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">University:</span>
+                                <span class="meta-val">Vellore Institute of Technology</span>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="https://www.linkedin.com/in/anup-s-8a55b2371" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                <i data-lucide="linkedin"></i>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">My Stack</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="code-2" class="category-icon cyan"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">Java</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">JavaScript (ES6+)</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Python</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">C / C++</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend Frameworks -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="server" class="category-icon indigo"></i>
+                            <h3>Backend Frameworks</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">Node.js / Express</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Spring Boot (Java)</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">FastAPI (Python)</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="database" class="category-icon violet"></i>
+                            <h3>Databases & Cache</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">PostgreSQL</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">MySQL</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">MongoDB</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Redis (Caching)</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & DevOps -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i data-lucide="cpu" class="category-icon pink"></i>
+                            <h3>Tools & DevOps</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name">Git & GitHub</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Docker</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">REST APIs / Postman</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name">Linux Command Line</div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">What I Offer</span>
+                    <h2 class="section-title">Services</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper cyan-glow">
+                            <i data-lucide="layers" class="service-icon cyan"></i>
+                        </div>
+                        <h3>API Development & Integration</h3>
+                        <p>Designing secure, performant RESTful APIs with clean request validation, proper routing, and standard documentation (Swagger/OpenAPI).</p>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper indigo-glow">
+                            <i data-lucide="git-branch" class="service-icon indigo"></i>
+                        </div>
+                        <h3>Database Schema Design</h3>
+                        <p>Structuring relational and NoSQL databases to guarantee data consistency, optimizing query execution plans, and implementing indexes.</p>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper violet-glow">
+                            <i data-lucide="shield-check" class="service-icon violet"></i>
+                        </div>
+                        <h3>Authentication & Security</h3>
+                        <p>Integrating JWT tokens, OAuth, bcrypt hashing, and middle-ware logic to enforce secure authorization checks across routes.</p>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper pink-glow">
+                            <i data-lucide="terminal" class="service-icon pink"></i>
+                        </div>
+                        <h3>Backend Scripting & Automation</h3>
+                        <p>Creating automation utility scripts in Python/Node.js, background worker threads, data parsers, and cron jobs for server tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">My Creations</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Projects Filters -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- Project 1: Hospital Appointment System (Java) -->
+                    <div class="project-card glass-card" data-category="backend">
+                        <div class="project-banner bg-gradient-java">
+                            <i data-lucide="coffee" class="project-banner-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3>Hospital Appointment Management</h3>
+                            <p>A backend system for managing clinic appointments. Handles role-based access control (Doctor, Patient, Admin), schedules appointment slots, and automates email notifications.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-link" aria-label="View Demo"><i data-lucide="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Caytm API Gateway Module (Internship Project Highlight) -->
+                    <div class="project-card glass-card" data-category="backend">
+                        <div class="project-banner bg-gradient-node">
+                            <i data-lucide="shield" class="project-banner-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">Redis</span>
+                            </div>
+                            <h3>API Gateway & Rate Limiter</h3>
+                            <p>Developed as a core learning simulation matching Caytm Technologies' environment. Implements token-bucket rate limiting, request forwarding, routing logs, and Redis request caching.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-link" aria-label="View System Design Documentation"><i data-lucide="file-text"></i> System Specs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Distributed Web Scraper & API Engine -->
+                    <div class="project-card glass-card" data-category="backend">
+                        <div class="project-banner bg-gradient-python">
+                            <i data-lucide="hard-drive" class="project-banner-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <h3>Distributed Web Scraper</h3>
+                            <p>An asynchronous pipeline built with Python that scrapes academic publications and exposes the aggregated data via an indexed REST API. Includes automatic proxy rotation.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-link" aria-label="View Demo"><i data-lucide="external-link"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: French Club VITC Event Portal -->
+                    <div class="project-card glass-card" data-category="fullstack">
+                        <div class="project-banner bg-gradient-club">
+                            <i data-lucide="sparkles" class="project-banner-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">CSS Grid</span>
+                            </div>
+                            <h3>Event Registration & Admin Portal</h3>
+                            <p>An internal web utility created for French Club VITC to handle registrations for linguistic workshops. Features a sleek frontend dashboard and CSV registration exports.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="project-link" aria-label="View Event Page"><i data-lucide="external-link"></i> Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info">
+                        <h3>Let's collaborate on something awesome!</h3>
+                        <p class="contact-desc">
+                            Whether you have an internship opportunity, a project proposal, or just want to chat about backend systems and databases, feel free to drop a message.
+                        </p>
+
+                        <div class="contact-channels">
+                            <div class="channel-card glass-card">
+                                <div class="channel-icon cyan-bg">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="channel-content">
+                                    <span class="channel-label">Email Me</span>
+                                    <a href="mailto:anups.cse@outlook.com" class="channel-link">anups.cse@outlook.com</a>
+                                </div>
+                            </div>
+
+                            <div class="channel-card glass-card">
+                                <div class="channel-icon indigo-bg">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="channel-content">
+                                    <span class="channel-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/anup-s-8a55b2371" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/anup-s-8a55b2371</a>
+                                </div>
+                            </div>
+
+                            <div class="channel-card glass-card">
+                                <div class="channel-icon violet-bg">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="channel-content">
+                                    <span class="channel-label">Location</span>
+                                    <span class="channel-text">Kozhikode, Kerala & VIT Chennai, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" action="#" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            
+                            <!-- Form Success/Error States -->
+                            <div class="form-message" id="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Anup S. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/anup-s-8a55b2371" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="mailto:anups.cse@outlook.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
