@@ -893,7 +893,7 @@ button {
 .project-links {
     margin-top: auto;
     display: flex;
-    gap: 16px;
+    gap: 12px;
 }
 
 .project-link {
@@ -902,17 +902,30 @@ button {
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
+    gap: 8px;
     color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    padding: 8px 18px;
+    border-radius: 30px;
+    transition: var(--transition);
 }
 
 .project-link:hover {
     color: var(--cyan);
+    border-color: var(--cyan);
+    background: rgba(6, 182, 212, 0.08);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
+    transform: translateY(-2px);
 }
 
-.project-link i {
-    width: 16px;
-    height: 16px;
+.project-link i,
+.project-link svg {
+    width: 15px;
+    height: 15px;
+    stroke-width: 2.5px;
+    display: inline-block;
 }
 
 /* ==========================================================================
