@@ -117,10 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Apply scroll animations to cards
-    const cardsToAnimate = document.querySelectorAll('.info-card, .skills-category, .service-card, .project-card, .channel-card, .contact-form-container');
+    const cardsToAnimate = document.querySelectorAll('.skills-category, .exp-item, .project-card, .channel-card, .contact-form-container');
     cardsToAnimate.forEach((card, index) => {
         card.classList.add('fade-in-up');
-        card.style.transitionDelay = `${(index % 3) * 0.1}s`;
+        card.style.transitionDelay = `${(index % 3) * 0.08}s`;
         animationObserver.observe(card);
     });
 

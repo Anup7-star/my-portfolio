@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anup S | Backend Developer & B.Tech CSE Student</title>
+    <title>Anup S | Backend Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     
     <!-- Meta tags for SEO -->
-    <meta name="description" content="Portfolio of Anup S, a 2nd year B.Tech Computer Science (Core) student at VIT Chennai and Backend Developer Intern at Caytm Technologies. Building scalable backend solutions, REST APIs, and database models.">
-    <meta name="keywords" content="Anup S, Backend Developer, Caytm Technologies, VIT Chennai, Vellore Institute of Technology, BTech CSE, Java Developer, Node.js, Kozhikode, Chennai, Software Engineer, Portfolio">
+    <meta name="description" content="Minimalist portfolio of Anup S, a Backend Developer and Computer Science student at VIT Chennai. Discover backend engineering projects, skills, and experience.">
+    <meta name="keywords" content="Anup S, Backend Developer, Caytm Technologies, VIT Chennai, Vellore Institute of Technology, BTech CSE, Java Developer, Spring Boot, Kozhikode, Software Engineer, Portfolio">
     <meta name="author" content="Anup S">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Anup S | Backend Developer & B.Tech CSE Student">
-    <meta property="og:description" content="Backend Developer Intern @ Caytm Technologies & B.Tech CSE Student @ VIT Chennai. Discover projects, skills, and backend engineering expertise.">
+    <meta property="og:title" content="Anup S | Backend Developer">
+    <meta property="og:description" content="Backend Developer & Computer Science Student at VIT Chennai. Discover projects, skills, and backend engineering expertise.">
     <meta property="og:url" content="https://linkedin.com/in/anup-s-8a55b2371">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons (Lucide Icons) -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link class="sheet" rel="stylesheet" href="style.css?v=10.0">
 </head>
-<body class="dark-theme">
+<body>
     
     <!-- Background Elements -->
     <div class="glow-bg">
@@ -40,7 +41,11 @@
     <header class="main-header" id="header">
         <div class="container nav-container">
             <a href="#home" class="logo">
-                <span class="gradient-text">ANUP S</span>
+                <svg class="logo-svg" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+                    <path d="M 2.5 12 C 7 6, 17 18, 21.5 12 A 9.5 9.5 0 0 1 2.5 12" fill="currentColor" />
+                </svg>
+                <span>Anup</span>
             </a>
             
             <nav class="nav-menu" id="nav-menu">
@@ -48,14 +53,14 @@
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#services" class="nav-link">Focus</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             
             <div class="nav-actions">
-                <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+                <a href="#contact" class="btn btn-sm btn-outline">Contact</a>
                 <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
                     <i data-lucide="menu"></i>
                 </button>
@@ -72,76 +77,45 @@
                         <span class="pulse-dot"></span>
                         <span class="badge-text">Backend Developer Intern @ Caytm Technologies</span>
                     </div>
-                    <h1 class="hero-title fade-in-up delay-1">
-                        WELCOME TO <br>
-                        <span class="gradient-text">MY PORTFOLIO</span>
+                    <h1 class="hero-title fade-in-up">
+                        ANUP S
                     </h1>
-                    <p class="hero-subtitle fade-in-up delay-2">
-                        Hi, I'm <strong class="highlight-text">Anup S</strong>, a B.Tech Computer Science Core student at <span class="highlight-text">VIT Chennai</span>. Passionate about server-side engineering, database management, and crafting robust APIs that power seamless user experiences.
+                    <p class="hero-subtitle fade-in-up">
+                        Hi, I'm Anup, a Computer Science student at <strong>VIT Chennai</strong>. I focus on server-side logic, API development, and database systems, translating complex requirements into clean, scalable code.
                     </p>
-                    <div class="hero-ctas fade-in-up delay-3">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>Explore My Work</span>
-                            <i data-lucide="arrow-right"></i>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <span>Get In Touch</span>
-                        </a>
+                    <div class="hero-ctas fade-in-up">
+                        <a href="#projects" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
-                <div class="hero-visual fade-in-up delay-2">
-                    <div class="profile-image-wrapper">
-                        <div class="profile-image-container">
-                            <img src="assets/profile.jpg" alt="Anup S" class="profile-image">
+                
+                <div class="hero-visual fade-in-up">
+                    <a href="https://drive.google.com/drive/folders/10nE3kuHsNtNm0DiTzTX_Ve1r68zZsqZ3?usp=drive_link" target="_blank" rel="noopener noreferrer" class="profile-link-wrapper">
+                        <span class="profile-image-label">Click this For my Resume</span>
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image-container">
+                                <img src="assets/profile.jpg?v=2" alt="Anup S" class="profile-image">
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me">
-                <i data-lucide="chevrons-down" class="bounce"></i>
-            </a>
         </section>
 
         <!-- About Me Section -->
         <section id="about" class="about-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">My Journey</span>
+                    <span class="section-tagline">Background</span>
                     <h2 class="section-title">About Me</h2>
                     <div class="title-underline"></div>
                 </div>
                 
                 <div class="about-grid">
-                    <div class="about-info-cards">
-                        <div class="info-card glass-card">
-                            <i data-lucide="graduation-cap" class="card-icon cyan"></i>
-                            <h3>Education</h3>
-                            <p><strong>B.Tech in Computer Science & Eng.</strong></p>
-                            <p class="card-sub">VIT Chennai (2025 - 2029)</p>
-                            <p class="card-desc">Focusing on algorithms, data structures, and database systems.</p>
-                        </div>
-                        
-                        <div class="info-card glass-card">
-                            <i data-lucide="briefcase" class="card-icon indigo"></i>
-                            <h3>Internship</h3>
-                            <p><strong>Backend Developer Intern</strong></p>
-                            <p class="card-sub">Caytm Technologies</p>
-                            <p class="card-desc">Working on server-side modules, core business logic, and API efficiency.</p>
-                        </div>
-
-                        <div class="info-card glass-card">
-                            <i data-lucide="palette" class="card-icon violet"></i>
-                            <h3>Campus Life</h3>
-                            <p><strong>Creative Club Member</strong></p>
-                            <p class="card-sub">French Club VITC (Feb 2026 - Present)</p>
-                            <p class="card-desc">Collaborating on events, visual design elements, and cultural activities.</p>
-                        </div>
-                    </div>
-
-                    <div class="about-bio glass-card">
-                        <h3>Who I Am</h3>
+                    <div class="about-bio">
+                        <h3>My Philosophy</h3>
                         <p class="bio-text">
-                            I am a student developer driven by the mechanics of backend servers. I enjoy transforming logical ideas into efficient, clean code. Currently, as a sophomore in CSE Core at <span class="text-glow">VIT Chennai</span>, I combine structural academic theory with hands-on enterprise backend development during my internship at <span class="text-glow">Caytm Technologies</span>.
+                            I am a student developer driven by the mechanics of backend engineering. I enjoy constructing efficient, readable code and structural logic. Currently, as a sophomore in CSE at <span>VIT Chennai</span>, I combine structural academic theory with hands-on development during my internship at <span>Caytm Technologies</span>.
                         </p>
                         <p class="bio-text">
                             My focus centers on constructing robust API frameworks, optimizing complex database workflows, and automating development tasks. I thrive on debugging complex logical issues and ensuring system reliability.
@@ -156,18 +130,29 @@
                                 <span class="meta-label">Email:</span>
                                 <span class="meta-val"><a href="mailto:anups241207@gmail.com">anups241207@gmail.com</a></span>
                             </div>
-                            <div class="meta-item">
-                                <span class="meta-label">University:</span>
-                                <span class="meta-val">Vellore Institute of Technology</span>
-                            </div>
                         </div>
 
                         <div class="about-actions">
                             <a href="https://www.linkedin.com/in/anup-s-8a55b2371" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                                 <i data-lucide="linkedin"></i>
-                                <span>LinkedIn Profile</span>
+                                <span>LinkedIn</span>
                             </a>
-                            <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+                        </div>
+                    </div>
+
+                    <div class="about-education-timeline">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <div class="edu-date">2025 — 2029</div>
+                            <div class="edu-title">B.Tech in Computer Science & Engineering</div>
+                            <div class="edu-institution">VIT Chennai</div>
+                            <div class="edu-desc">Focusing on algorithms, data structures, database design, and systems engineering.</div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-date">2023 — 2025</div>
+                            <div class="edu-title">Higher Secondary Education</div>
+                            <div class="edu-institution">Kozhikode, Kerala</div>
+                            <div class="edu-desc">Specialized in Physics, Chemistry, and Mathematics. Developed initial interest in computing.</div>
                         </div>
                     </div>
                 </div>
@@ -178,127 +163,111 @@
         <section id="skills" class="skills-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">My Stack</span>
-                    <h2 class="section-title">Skills & Expertise</h2>
+                    <span class="section-tagline">Proficiencies</span>
+                    <h2 class="section-title">Technical Stack</h2>
                     <div class="title-underline"></div>
                 </div>
 
                 <div class="skills-grid">
                     <!-- Languages -->
-                    <div class="skills-category glass-card">
+                    <div class="skills-category">
                         <div class="category-header">
-                            <i data-lucide="code-2" class="category-icon cyan"></i>
+                            <i data-lucide="code-2" class="category-icon"></i>
                             <h3>Languages</h3>
                         </div>
                         <ul class="skills-list">
-                            <li>
-                                <div class="skill-name">Java</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">Python</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">C / C++</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
-                            </li>
+                            <li class="skill-item"><span class="skill-name">Java</span></li>
+                            <li class="skill-item"><span class="skill-name">Python</span></li>
+                            <li class="skill-item"><span class="skill-name">C / C++</span></li>
+                            <li class="skill-item"><span class="skill-name">JavaScript</span></li>
                         </ul>
                     </div>
 
                     <!-- Backend Frameworks -->
-                    <div class="skills-category glass-card">
+                    <div class="skills-category">
                         <div class="category-header">
-                            <i data-lucide="server" class="category-icon indigo"></i>
-                            <h3>Backend Frameworks</h3>
+                            <i data-lucide="server" class="category-icon"></i>
+                            <h3>Backend</h3>
                         </div>
                         <ul class="skills-list">
-                            <li>
-                                <div class="skill-name">Spring Boot (Java)</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
-                            </li>
+                            <li class="skill-item"><span class="skill-name">Spring Boot (Java)</span></li>
+                            <li class="skill-item"><span class="skill-name">REST APIs</span></li>
                         </ul>
                     </div>
 
                     <!-- Databases -->
-                    <div class="skills-category glass-card">
+                    <div class="skills-category">
                         <div class="category-header">
-                            <i data-lucide="database" class="category-icon violet"></i>
+                            <i data-lucide="database" class="category-icon"></i>
                             <h3>Databases</h3>
                         </div>
                         <ul class="skills-list">
-                            <li>
-                                <div class="skill-name">PostgreSQL</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">MySQL</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
-                            </li>
+                            <li class="skill-item"><span class="skill-name">PostgreSQL</span></li>
+                            <li class="skill-item"><span class="skill-name">MySQL</span></li>
                         </ul>
                     </div>
 
                     <!-- Tools & DevOps -->
-                    <div class="skills-category glass-card">
+                    <div class="skills-category">
                         <div class="category-header">
-                            <i data-lucide="cpu" class="category-icon pink"></i>
-                            <h3>Tools & DevOps</h3>
+                            <i data-lucide="cpu" class="category-icon"></i>
+                            <h3>Tools</h3>
                         </div>
                         <ul class="skills-list">
-                            <li>
-                                <div class="skill-name">Git & GitHub</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name">REST APIs / Postman</div>
-                                <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
-                            </li>
+                            <li class="skill-item"><span class="skill-name">Git & GitHub</span></li>
+                            <li class="skill-item"><span class="skill-name">Postman</span></li>
+                            <li class="skill-item"><span class="skill-name">Docker</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Focus Section -->
-        <section id="services" class="services-section section-padding">
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">My Interests</span>
-                    <h2 class="section-title">Areas of Focus</h2>
+                    <span class="section-tagline">History</span>
+                    <h2 class="section-title">Experience</h2>
                     <div class="title-underline"></div>
                 </div>
-
-                <div class="services-grid">
-                    <div class="service-card glass-card">
-                        <div class="service-icon-wrapper cyan-glow">
-                            <i data-lucide="layers" class="service-icon cyan"></i>
+                
+                <div class="experience-timeline">
+                    <!-- Exp 1 -->
+                    <div class="exp-item">
+                        <div class="exp-left">
+                            <div class="exp-dates">May 2026 — Present</div>
+                            <div class="exp-company">Caytm Technologies</div>
                         </div>
-                        <h3>Backend Engineering</h3>
-                        <p>Studying and building server-side applications, designing API endpoints, and working with modern server architectures to process data efficiently.</p>
+                        <div class="exp-role">
+                            <h3>Backend Developer Intern</h3>
+                            <p class="exp-desc">
+                                Developing server-side modules, core logical paths, and efficient API connections for client-facing software applications.
+                            </p>
+                            <ul class="exp-bullets">
+                                <li>Optimized backend application API endpoints for quicker data routing.</li>
+                                <li>Designed and restructured PostgreSQL database tables and relationships.</li>
+                                <li>Worked in agile developer sprints to deploy features and clean bugs.</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="service-card glass-card">
-                        <div class="service-icon-wrapper indigo-glow">
-                            <i data-lucide="database" class="service-icon indigo"></i>
+                    <!-- Exp 2 -->
+                    <div class="exp-item">
+                        <div class="exp-left">
+                            <div class="exp-dates">Feb 2026 — Present</div>
+                            <div class="exp-company">French Club VITC</div>
                         </div>
-                        <h3>Database Management</h3>
-                        <p>Working with structured database systems like MySQL and PostgreSQL. Learning database normalization, schema design, and NoSQL integrations.</p>
-                    </div>
-
-                    <div class="service-card glass-card">
-                        <div class="service-icon-wrapper violet-glow">
-                            <i data-lucide="terminal" class="service-icon violet"></i>
+                        <div class="exp-role">
+                            <h3>Creative Club Member</h3>
+                            <p class="exp-desc">
+                                Planning cultural meetings, designing visual templates, and promoting local campus activities.
+                            </p>
+                            <ul class="exp-bullets">
+                                <li>Collaborated on banners and slides for college cultural festivals.</li>
+                                <li>Organized student integration sessions and introductory language workshops.</li>
+                            </ul>
                         </div>
-                        <h3>Algorithms & DSA</h3>
-                        <p>Sharpening core data structures and algorithm (DSA) skills in Java and C++ to solve complex computational logic and improve performance.</p>
-                    </div>
-
-                    <div class="service-card glass-card">
-                        <div class="service-icon-wrapper pink-glow">
-                            <i data-lucide="cpu" class="service-icon pink"></i>
-                        </div>
-                        <h3>AI & NLP Exploration</h3>
-                        <p>Exploring natural language processing models, utilizing pre-trained machine learning frameworks, and integrating them into backend pipelines.</p>
                     </div>
                 </div>
             </div>
@@ -308,7 +277,7 @@
         <section id="projects" class="projects-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">My Creations</span>
+                    <span class="section-tagline">Creations</span>
                     <h2 class="section-title">Projects</h2>
                     <div class="title-underline"></div>
                 </div>
@@ -324,18 +293,15 @@
                 <div class="projects-grid" id="projects-grid">
                     
                     <!-- Project 1: Hospital Management (Java) -->
-                    <div class="project-card glass-card" data-category="backend">
-                        <div class="project-banner bg-gradient-java">
-                            <i data-lucide="coffee" class="project-banner-icon"></i>
-                        </div>
+                    <div class="project-card" data-category="backend">
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">Spring Boot</span>
-                                <span class="tag">MySQL</span>
+                                <span class="tag tag-java">Java</span>
+                                <span class="tag tag-spring">Spring Boot</span>
+                                <span class="tag tag-db">MySQL</span>
                             </div>
                             <h3>Hospital Management</h3>
-                            <p>A comprehensive clinic management and doctor-patient appointment scheduling backend, built for the Caytm Technologies Assignment. Implements database transaction handling and secure scheduling logic.</p>
+                            <p>A comprehensive clinic management and doctor-patient appointment scheduling backend. Implements relational transaction controls and secure REST mapping pathways.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Anup7-star/Hospital_Management" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
                             </div>
@@ -343,19 +309,16 @@
                     </div>
 
                     <!-- Project 2: NYX NLP Log Analyzer (Python) -->
-                    <div class="project-card glass-card" data-category="backend">
-                        <div class="project-banner bg-gradient-python">
-                            <i data-lucide="shield" class="project-banner-icon"></i>
-                        </div>
+                    <div class="project-card" data-category="backend">
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">PyTorch</span>
-                                <span class="tag">Hugging Face</span>
-                                <span class="tag">Elasticsearch</span>
+                                <span class="tag tag-python">Python</span>
+                                <span class="tag tag-pytorch">PyTorch</span>
+                                <span class="tag tag-huggingface">Hugging Face</span>
+                                <span class="tag tag-db">Elasticsearch</span>
                             </div>
                             <h3>NYX: NLP Security Log Analyzer</h3>
-                            <p>An NLP-powered security log analyzer that converts natural language queries into Elasticsearch DSL, retrieves security logs, and generates structured summaries. Built with PyTorch, T5 model, and Elasticsearch.</p>
+                            <p>An NLP security analyzer transforming plain language commands into Elasticsearch DSL queries to compile security logs and output summary cards.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Anup7-star/NYX" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
                             </div>
@@ -363,37 +326,32 @@
                     </div>
 
                     <!-- Project 3: FIN Finance Tracking (Python) -->
-                    <div class="project-card glass-card" data-category="backend">
-                        <div class="project-banner bg-gradient-node">
-                            <i data-lucide="hard-drive" class="project-banner-icon"></i>
-                        </div>
+                    <div class="project-card" data-category="backend">
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Data Analysis</span>
+                                <span class="tag tag-python">Python</span>
+                                <span class="tag tag-pandas">Pandas</span>
                             </div>
                             <h3>FIN: Finance Tracking</h3>
-                            <p>A Python-based personal finance tracker designed to monitor daily transactions, manage monthly savings budgets, and analyze categorical expenditure patterns.</p>
+                            <p>A Python data script built to organize transaction rows, flag monthly spending outliers, and draw basic graphic budget charts.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Anup7-star/FIN-finance-tracking-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 4: Finora (Full-Stack) -->
-                    <div class="project-card glass-card" data-category="fullstack">
-                        <div class="project-banner bg-gradient-club">
-                            <i data-lucide="sparkles" class="project-banner-icon"></i>
-                        </div>
+                    <!-- Project 4: FitCheck AI (Full-Stack) -->
+                    <div class="project-card" data-category="fullstack">
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">JavaScript</span>
+                                <span class="tag tag-js">JavaScript</span>
+                                <span class="tag tag-python">MediaPipe</span>
+                                <span class="tag tag-db">WebAssembly</span>
                             </div>
-                            <h3>Finora Budget Manager</h3>
-                            <p>A lightweight financial planning and budgeting assistant interface featuring clean trackers and real-time expense calculations.</p>
+                            <h3>FitCheck AI</h3>
+                            <p>An AI-powered, real-time workout tracking and posture analysis web application. Natively tracks 33 body joints at 30-60 FPS in the browser, providing visual skeleton overlays and Web Audio synth warnings.</p>
                             <div class="project-links">
-                                <a href="https://github.com/Anup7-star/finora" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                                <a href="https://github.com/Anup7-star/FitCheck" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
                             </div>
                         </div>
                     </div>
@@ -401,11 +359,11 @@
             </div>
         </section>
 
-        <!-- Contact Us Section -->
+        <!-- Contact Section -->
         <section id="contact" class="contact-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Get In Touch</span>
+                    <span class="section-tagline">Communication</span>
                     <h2 class="section-title">Contact Me</h2>
                     <div class="title-underline"></div>
                 </div>
@@ -413,14 +371,14 @@
                 <div class="contact-grid">
                     <!-- Contact Cards -->
                     <div class="contact-info">
-                        <h3>Let's collaborate on something awesome!</h3>
+                        <h3>Let's collaborate on something new!</h3>
                         <p class="contact-desc">
-                            Whether you have an internship opportunity, a project proposal, or just want to chat about backend systems and databases, feel free to drop a message.
+                            Whether you have an internship opportunity, a project proposal, or just want to chat about backend systems and databases, feel free to get in touch.
                         </p>
 
                         <div class="contact-channels">
-                            <div class="channel-card glass-card">
-                                <div class="channel-icon cyan-bg">
+                            <div class="channel-card">
+                                <div class="channel-icon">
                                     <i data-lucide="mail"></i>
                                 </div>
                                 <div class="channel-content">
@@ -429,8 +387,8 @@
                                 </div>
                             </div>
 
-                            <div class="channel-card glass-card">
-                                <div class="channel-icon indigo-bg">
+                            <div class="channel-card">
+                                <div class="channel-icon">
                                     <i data-lucide="linkedin"></i>
                                 </div>
                                 <div class="channel-content">
@@ -439,8 +397,8 @@
                                 </div>
                             </div>
 
-                            <div class="channel-card glass-card">
-                                <div class="channel-icon violet-bg">
+                            <div class="channel-card">
+                                <div class="channel-icon">
                                     <i data-lucide="map-pin"></i>
                                 </div>
                                 <div class="channel-content">
@@ -452,23 +410,23 @@
                     </div>
 
                     <!-- Contact Form -->
-                    <div class="contact-form-container glass-card">
+                    <div class="contact-form-container">
                         <form id="contact-form" action="#" class="contact-form">
                             <div class="form-group">
-                                <input type="text" id="name" name="name" required placeholder=" ">
                                 <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" name="email" required placeholder=" ">
                                 <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
                             </div>
                             <div class="form-group">
-                                <input type="text" id="subject" name="subject" required placeholder=" ">
                                 <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Project inquiry">
                             </div>
                             <div class="form-group">
-                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
                                 <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
                             </div>
                             
                             <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
@@ -499,7 +457,7 @@
 
     <!-- Confirmation Modal -->
     <div id="contact-modal" class="modal-overlay">
-        <div class="modal-card glass-card">
+        <div class="modal-card">
             <div class="modal-icon-wrapper">
                 <i data-lucide="check-circle-2" class="modal-icon"></i>
             </div>
