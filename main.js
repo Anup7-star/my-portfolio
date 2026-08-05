@@ -289,6 +289,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================================================
+    // SPOTLIGHT COLOR LIGHT DIMMER SWITCH
+    // ==========================================================================
+    const lightBtns = document.querySelectorAll('.light-btn');
+    lightBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            lightBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const lightTheme = btn.getAttribute('data-light');
+            if (lightTheme === 'original') {
+                document.body.removeAttribute('data-light-theme');
+            } else {
+                document.body.setAttribute('data-light-theme', lightTheme);
+            }
+        });
+    });
+
+    // ==========================================================================
     // FOOTER COPYRIGHT YEAR
     // ==========================================================================
     const yearSpan = document.getElementById('current-year');

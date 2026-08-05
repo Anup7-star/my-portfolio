@@ -2,7 +2,7 @@
 
 A highly polished, responsive, and interactive single-page developer portfolio website built from scratch. Designed with a modern, premium "tech-forward" dark theme, custom ambient gradient animations, and glassmorphism styling. 
 
-It highlights my experience as a **Backend Developer Intern** at **Caytm Technologies** and my academic studies in **B.Tech Computer Science (Core)** at **Vellore Institute of Technology (VIT Chennai)**.
+It highlights my experience completing a **Backend Developer Internship** at **Caytm Technologies** (May 2026 - July 2026) and my academic studies in **B.Tech Computer Science (Core)** at **Vellore Institute of Technology (VIT Chennai)**.
 
 ---
 
