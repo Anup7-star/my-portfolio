@@ -26,7 +26,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- Stylesheet -->
-    <link class="sheet" rel="stylesheet" href="style.css?v=16.0">
+    <link class="sheet" rel="stylesheet" href="style.css?v=17.0">
 </head>
 <body>
     
@@ -71,65 +71,33 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero-section">
-            <!-- Curved lamp arm (stick) -->
-            <div class="lamp-arm"></div>
-            
-            <!-- Stylized hanging pendant lamp -->
-            <div class="spotlight-lamp">
-                <div class="lamp-cord"></div>
-                <svg viewBox="0 0 100 100" class="lamp-svg">
-                    <rect x="42" y="10" width="16" height="20" rx="2" fill="currentColor" />
-                    <path d="M 20 60 Q 50 25 80 60 Z" fill="currentColor" />
-                    <circle cx="50" cy="58" r="10" fill="#FCF9EE" />
-                </svg>
-            </div>
-
-            <!-- Spotlight control switchboard -->
-            <div class="light-control-panel">
-                <button class="light-btn active" data-light="original" title="Original Light">
-                    <span class="btn-color original-dot"></span>
-                    <span>Original</span>
-                </button>
-                <button class="light-btn" data-light="black" title="Black Light">
-                    <span class="btn-color black-dot"></span>
-                    <span>Black</span>
-                </button>
-                <button class="light-btn" data-light="led" title="LED Light">
-                    <span class="btn-color led-dot"></span>
-                    <span>LED</span>
-                </button>
-            </div>
-
-            <!-- Spotlight light beam container -->
-            <div class="light-beam">
-                <div class="container hero-container">
-                    <div class="hero-content">
-                        <div class="badge-glow fade-in-up">
-                            <span class="pulse-dot"></span>
-                            <span class="badge-text">Former Backend Developer Intern @ Caytm Technologies</span>
-                        </div>
-                        <h1 class="hero-title fade-in-up">
-                            ANUP S
-                        </h1>
-                        <p class="hero-subtitle fade-in-up">
-                            Hi, I'm Anup, a Computer Science student at <strong>VIT Chennai</strong>. I focus on server-side logic, API development, and database systems, translating complex requirements into clean, scalable code.
-                        </p>
-                        <div class="hero-ctas fade-in-up">
-                            <a href="#projects" class="btn btn-primary">Explore Work</a>
-                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                        </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-glow fade-in-up">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">Former Backend Developer Intern @ Caytm Technologies</span>
                     </div>
-                    
-                    <div class="hero-visual fade-in-up">
-                        <a href="https://drive.google.com/drive/folders/10nE3kuHsNtNm0DiTzTX_Ve1r68zZsqZ3?usp=drive_link" target="_blank" rel="noopener noreferrer" class="profile-link-wrapper">
-                            <span class="profile-image-label">Click this For my Resume</span>
-                            <div class="profile-image-wrapper">
-                                <div class="profile-image-container">
-                                    <img src="assets/profile.jpg?v=2" alt="Anup S" class="profile-image">
-                                </div>
+                    <h1 class="hero-title fade-in-up">
+                        ANUP S
+                    </h1>
+                    <p class="hero-subtitle fade-in-up">
+                        Hi, I'm Anup, a Computer Science student at <strong>VIT Chennai</strong>. I focus on server-side logic, API development, and database systems, translating complex requirements into clean, scalable code.
+                    </p>
+                    <div class="hero-ctas fade-in-up">
+                        <a href="#projects" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-in-up">
+                    <a href="https://drive.google.com/drive/folders/10nE3kuHsNtNm0DiTzTX_Ve1r68zZsqZ3?usp=drive_link" target="_blank" rel="noopener noreferrer" class="profile-link-wrapper">
+                        <span class="profile-image-label">Click this For my Resume</span>
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image-container">
+                                <img src="assets/profile.jpg?v=2" alt="Anup S" class="profile-image">
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -281,6 +249,11 @@
                                 <li>Optimized database schemas in PostgreSQL, resulting in cleaner queries and improved data fetch speeds.</li>
                                 <li>Collaborated in agile developer workflows, deploying feature changes and debugging server-side API endpoints.</li>
                             </ul>
+                            <div class="exp-actions" style="margin-top: 15px;">
+                                <button id="view-cert-btn" class="btn btn-outline btn-sm">
+                                    <i data-lucide="award"></i> View Certificate
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -515,7 +488,27 @@
         </div>
     </div>
 
+    <!-- Certificate Viewer Modal -->
+    <div id="cert-modal" class="modal-overlay">
+        <div class="modal-card cert-modal-card">
+            <div class="cert-modal-header">
+                <h3 class="modal-title">Caytm Technologies Internship Certificate</h3>
+                <div class="cert-modal-controls">
+                    <a href="assets/InternshipCertificate_Anup.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Open in new tab">
+                        <i data-lucide="external-link"></i> Open PDF
+                    </a>
+                    <button id="cert-modal-close-btn" class="modal-close-icon" aria-label="Close modal">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cert-modal-body">
+                <iframe src="assets/InternshipCertificate_Anup.pdf" class="cert-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script src="main.js?v=2.0"></script>
+    <script src="main.js"></script>
 </body>
 </html>

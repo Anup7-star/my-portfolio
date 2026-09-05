@@ -289,22 +289,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================================================
-    // SPOTLIGHT COLOR LIGHT DIMMER SWITCH
+    // CERTIFICATE VIEWER MODAL
     // ==========================================================================
-    const lightBtns = document.querySelectorAll('.light-btn');
-    lightBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            lightBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const lightTheme = btn.getAttribute('data-light');
-            if (lightTheme === 'original') {
-                document.body.removeAttribute('data-light-theme');
-            } else {
-                document.body.setAttribute('data-light-theme', lightTheme);
+    const viewCertBtn = document.getElementById('view-cert-btn');
+    const certModal = document.getElementById('cert-modal');
+    const certModalCloseBtn = document.getElementById('cert-modal-close-btn');
+
+    if (viewCertBtn && certModal) {
+        viewCertBtn.addEventListener('click', () => {
+            certModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Lock background scrolling
+        });
+
+        const closeCertModal = () => {
+            certModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore background scrolling
+        };
+
+        if (certModalCloseBtn) {
+            certModalCloseBtn.addEventListener('click', closeCertModal);
+        }
+
+        // Close on background click
+        certModal.addEventListener('click', (e) => {
+            if (e.target === certModal) {
+                closeCertModal();
             }
         });
-    });
+
+        // Close on Escape key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && certModal.classList.contains('active')) {
+                closeCertModal();
+            }
+        });
+    }
 
     // ==========================================================================
     // FOOTER COPYRIGHT YEAR

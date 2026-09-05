@@ -313,7 +313,7 @@ main {
     left: 0;
     width: 100%;
     height: var(--header-height);
-    background-color: rgba(13, 13, 15, 0.75); /* Translucent dark background above the lamp */
+    background-color: rgba(252, 249, 238, 0.85); /* Translucent primrose yellow background */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid transparent;
@@ -325,30 +325,6 @@ main {
     height: 75px;
     border-bottom: 1px solid var(--border-color);
     background-color: rgba(252, 249, 238, 0.95);
-}
-
-/* Header colors when not scrolled (floating on dark room area above lamp) */
-.main-header:not(.scrolled) .nav-link {
-    color: rgba(252, 249, 238, 0.7) !important;
-}
-.main-header:not(.scrolled) .nav-link:hover,
-.main-header:not(.scrolled) .nav-link.active {
-    color: #FCF9EE !important;
-}
-.main-header:not(.scrolled) .logo {
-    color: #FCF9EE !important;
-}
-.main-header:not(.scrolled) .logo-svg {
-    color: #FCF9EE !important;
-}
-.main-header:not(.scrolled) .btn-outline {
-    color: #FCF9EE !important;
-    border-color: rgba(252, 249, 238, 0.3) !important;
-}
-.main-header:not(.scrolled) .btn-outline:hover {
-    background-color: #FCF9EE !important;
-    color: #0D0D0F !important;
-    border-color: #FCF9EE !important;
 }
 
 .nav-container {
@@ -432,79 +408,11 @@ main {
    HERO SECTION
    ========================================================================== */
 .hero-section {
-    position: relative;
     min-height: 100vh;
-    background-color: #0D0D0F; /* Dark room background */
+    padding-top: var(--header-height);
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    overflow: hidden;
+    align-items: center;
     border-bottom: 1px solid var(--border-color);
-}
-
-/* Custom arc lamp stick (red/terracotta arm) */
-.lamp-arm {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 50%;
-    height: calc(100% - 20px);
-    border-top: 4px solid var(--accent);
-    border-right: 4px solid var(--accent);
-    border-top-right-radius: 24px;
-    pointer-events: none;
-    z-index: 95;
-}
-
-/* Custom pendant lamp hanging from the arm */
-.spotlight-lamp {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 100;
-    pointer-events: none;
-}
-
-.lamp-cord {
-    width: 4px;
-    height: 60px;
-    background-color: var(--accent);
-}
-
-.lamp-svg {
-    width: 60px;
-    height: 60px;
-    color: var(--accent);
-    filter: drop-shadow(0 0 10px rgba(252, 249, 238, 0.4));
-}
-
-/* Light beam container with wide spotlight masking */
-.light-beam {
-    width: 100%;
-    background-color: var(--bg-color); /* Primrose yellow #FCF9EE */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: polygon(50% 140px, 0% 280px, 0% 100%, 100% 100%, 100% 280px);
-    position: relative;
-    padding-top: 180px;
-    padding-bottom: 80px;
-}
-
-.light-beam::before {
-    content: '';
-    position: absolute;
-    top: 140px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 0%, rgba(252, 249, 238, 0.5) 0%, rgba(252, 249, 238, 0) 50%);
-    pointer-events: none;
-    z-index: 2;
 }
 
 .hero-container {
@@ -512,8 +420,6 @@ main {
     grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
     gap: 60px;
-    position: relative;
-    z-index: 5;
 }
 
 .hero-content {
@@ -1315,6 +1221,80 @@ main {
     line-height: 1.6;
 }
 
+/* Certificate Viewer Modal Specific Styles */
+.cert-modal-card {
+    max-width: 900px;
+    width: 95%;
+    height: 80vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.cert-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--border-color-strong);
+    background-color: var(--bg-color-alt);
+}
+
+.cert-modal-header .modal-title {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cert-modal-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal-close-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.modal-close-icon:hover {
+    color: var(--color-terracotta);
+    background-color: rgba(35, 32, 20, 0.05);
+}
+
+.cert-modal-body {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #525659;
+}
+
+.cert-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .cert-modal-card {
+        height: 70vh;
+    }
+    .cert-modal-header .modal-title {
+        font-size: 0.95rem;
+    }
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN & MEDIA QUERIES
    ========================================================================== */
@@ -1366,12 +1346,6 @@ main {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 60px;
-    }
-
-    .light-beam {
-        clip-path: polygon(50% 140px, -80% 100%, 180% 100%);
-        padding-top: 200px;
-        padding-bottom: 60px;
     }
 }
 
@@ -1441,226 +1415,6 @@ main {
         flex-direction: column;
         gap: 20px;
         text-align: center;
-    }
-}
-
-/* ==========================================================================
-   SPOTLIGHT COLOR PANEL & INTERACTIVE SWITCHES
-   ========================================================================== */
-.light-control-panel {
-    position: absolute;
-    top: 100px;
-    right: 40px;
-    background-color: rgba(13, 13, 15, 0.8);
-    border: 1px solid rgba(245, 241, 232, 0.1);
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    z-index: 110;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-.light-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 12px;
-    background: none;
-    border: none;
-    border-radius: 6px;
-    color: rgba(252, 249, 238, 0.7);
-    font-family: var(--font-sans);
-    font-size: 0.8rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: var(--transition);
-}
-
-.light-btn:hover {
-    color: #FCF9EE;
-    background-color: rgba(252, 249, 238, 0.05);
-}
-
-.light-btn.active {
-    color: #FCF9EE;
-    background-color: rgba(252, 249, 238, 0.1);
-    font-weight: 600;
-}
-
-.btn-color {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.original-dot { background-color: #F3ECCD; box-shadow: 0 0 6px #F3ECCD; }
-.black-dot { background-color: #000000; border: 1px solid #FCF9EE; box-shadow: 0 0 6px rgba(0,0,0,0.8); }
-.led-dot { background-color: #BCCCDC; box-shadow: 0 0 6px #BCCCDC; }
-
-/* Inverted Black Light Theme overrides */
-body[data-light-theme="black"] {
-    --bg-color: #0D0D0F;          /* Dark charcoal black for rest of the page */
-    --bg-color-alt: #161619;
-    --text-primary: #FCF9EE;      /* Light white/cream text */
-    --text-secondary: #D4CEB8;
-    --text-muted: #8E8770;
-    --border-color: rgba(252, 249, 238, 0.08);
-    --border-color-strong: rgba(252, 249, 238, 0.15);
-    background: #0D0D0F;
-}
-
-/* The dark room (hero section background) becomes light champagne! */
-body[data-light-theme="black"] .hero-section {
-    background-color: #FCF9EE;
-}
-
-/* The lamp arm (stick) becomes dark charcoal */
-body[data-light-theme="black"] .lamp-arm {
-    border-color: #232014;
-}
-
-/* The lamp cord becomes dark charcoal */
-body[data-light-theme="black"] .lamp-cord {
-    background-color: #232014;
-}
-
-/* The lamp SVG head becomes dark charcoal */
-body[data-light-theme="black"] .lamp-svg {
-    color: #232014;
-    filter: drop-shadow(0 0 10px rgba(35, 32, 20, 0.2));
-}
-
-/* The bulb inside the shade turns dark */
-body[data-light-theme="black"] .lamp-svg circle {
-    fill: #0D0D0F !important;
-}
-
-/* Radial light overlay becomes dark shadow */
-body[data-light-theme="black"] .light-beam::before {
-    background: radial-gradient(circle at 50% 0%, rgba(13, 13, 15, 0.6) 0%, rgba(13, 13, 15, 0) 50%);
-}
-
-/* Header links when unscrolled float over the now light hero section background */
-body[data-light-theme="black"] .main-header:not(.scrolled) {
-    background-color: rgba(252, 249, 238, 0.85);
-}
-
-body[data-light-theme="black"] .main-header:not(.scrolled) .nav-link {
-    color: #5B5441 !important;
-}
-
-body[data-light-theme="black"] .main-header:not(.scrolled) .nav-link:hover,
-body[data-light-theme="black"] .main-header:not(.scrolled) .nav-link.active {
-    color: #232014 !important;
-}
-
-body[data-light-theme="black"] .main-header:not(.scrolled) .logo {
-    color: #232014 !important;
-}
-
-body[data-light-theme="black"] .main-header:not(.scrolled) .logo-svg {
-    color: #232014 !important;
-}
-
-body[data-light-theme="black"] .main-header:not(.scrolled) .btn-outline {
-    color: var(--color-terracotta) !important;
-    border-color: var(--color-terracotta) !important;
-}
-
-body[data-light-theme="black"] .main-header:not(.scrolled) .btn-outline:hover {
-    background-color: var(--color-terracotta) !important;
-    color: #FCF9EE !important;
-}
-
-/* Header when scrolled down the dark sections becomes dark */
-body[data-light-theme="black"] .main-header.scrolled {
-    background-color: rgba(13, 13, 15, 0.95);
-}
-
-/* Cool LED Theme overrides */
-body[data-light-theme="led"] {
-    --bg-color: #FCF9EE;          /* Keep normal page background warm champagne */
-    --bg-color-alt: #F6F1DC;
-    --text-primary: #232014;
-    --text-secondary: #5B5441;
-    --text-muted: #7E7660;
-    --border-color: rgba(35, 32, 20, 0.08);
-    --border-color-strong: rgba(35, 32, 20, 0.15);
-    background: linear-gradient(-45deg, #FCF9EE, #F6F1DC, #F3ECCD);
-}
-
-/* LED Spotlight beam is cool ice-blue ONLY on first page */
-body[data-light-theme="led"] .light-beam {
-    background-color: #E1E6EB; /* Ice-blue/grey color from screenshot */
-}
-
-body[data-light-theme="led"] .light-beam::before {
-    background: radial-gradient(circle at 50% 0%, rgba(225, 230, 235, 0.6) 0%, rgba(225, 230, 235, 0) 50%);
-}
-
-/* Overrides for text inside the LED spotlight */
-body[data-light-theme="led"] .light-beam .hero-title {
-    color: #102A43;
-}
-
-body[data-light-theme="led"] .light-beam .hero-subtitle {
-    color: #334E68;
-}
-
-body[data-light-theme="led"] .light-beam .badge-text {
-    color: #102A43;
-}
-
-body[data-light-theme="led"] .light-beam .badge-glow {
-    border-color: rgba(16, 42, 67, 0.12);
-    background: rgba(16, 42, 67, 0.04);
-}
-
-body[data-light-theme="led"] .light-beam .btn-secondary {
-    border-color: rgba(16, 42, 67, 0.2);
-    color: #102A43;
-}
-
-body[data-light-theme="led"] .light-beam .btn-secondary:hover {
-    background-color: rgba(16, 42, 67, 0.03);
-    border-color: #102A43;
-}
-
-body[data-light-theme="led"] .light-beam .profile-image-label {
-    color: #334E68;
-}
-
-body[data-light-theme="led"] .light-beam .profile-image-label::after {
-    background-color: #334E68;
-}
-
-body[data-light-theme="led"] .light-beam .profile-image-wrapper {
-    border-color: rgba(16, 42, 67, 0.15);
-}
-
-/* Keep the scrolled navigation background warm champagne */
-body[data-light-theme="led"] .main-header.scrolled {
-    background-color: rgba(252, 249, 238, 0.95);
-}
-
-/* Float controls to bottom right on mobile screens */
-@media (max-width: 991px) {
-    .light-control-panel {
-        top: auto;
-        bottom: 20px;
-        right: 20px;
-        flex-direction: row;
-        gap: 8px;
-        position: fixed;
-        z-index: 999;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     }
 }
 
