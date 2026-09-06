@@ -23,7 +23,7 @@ A focused and detail-oriented Computer Science sophomore at VIT Chennai with pra
 ### **Caytm Technologies** | *Backend Developer Intern*
 *May 2026 — July 2026*
 * Developed server-side models, database schemas, and optimized business logic during a 3-month internship program.
-* Architected and developed a comprehensive **Hospital Management System** as the core internship project, managing clinic schedulers and patient logs.
+* Architected and developed a comprehensive **CodeSphere** platform as the core internship project, enabling real-time collaborative cloud development workspaces.
 * Optimized database schemas in PostgreSQL, resulting in cleaner queries and improved data fetch speeds.
 * Collaborated in agile developer workflows, deploying feature changes and debugging server-side API endpoints.
 
