@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.transform = 'scale(0.95) translateY(10px)';
                 
                 setTimeout(() => {
-                    if (filterValue === 'all' || category === filterValue) {
+                    if (filterValue === 'all' || category === filterValue || (category && category.split(' ').includes(filterValue))) {
                         card.style.display = 'flex';
                         // Re-trigger animation frame to apply styles
                         requestAnimationFrame(() => {

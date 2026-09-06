@@ -94,7 +94,7 @@
                         <span class="profile-image-label">Click this For my Resume</span>
                         <div class="profile-image-wrapper">
                             <div class="profile-image-container">
-                                <img src="assets/profile.jpg?v=2" alt="Anup S" class="profile-image">
+                                <img src="assets/profile.png?v=3" alt="Anup S" class="profile-image">
                             </div>
                         </div>
                     </a>
@@ -292,17 +292,37 @@
                     <button class="filter-btn active" data-filter="all">All Projects</button>
                     <button class="filter-btn" data-filter="backend">Backend</button>
                     <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="security">Security & Tools</button>
                 </div>
 
                 <!-- Projects Grid -->
                 <div class="projects-grid" id="projects-grid">
                     
+                    <!-- Project: FitCheck AI (Full-Stack / AI) -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-js">JavaScript</span>
+                                <span class="tag tag-python">MediaPipe</span>
+                                <span class="tag tag-db">WebAssembly</span>
+                                <span class="tag tag-js">Web Audio API</span>
+                            </div>
+                            <h3>FitCheck AI</h3>
+                            <p>An AI-powered, real-time workout tracking and posture analysis web application. Natively tracks 33 body joints at 30-60 FPS in the browser, providing visual skeleton overlays and Web Audio synth warnings.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Anup7-star/FitCheck" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                                <a href="https://fit-check-green-rho.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Live Demo"><i data-lucide="external-link"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Project: CodeSphere (Collaborative Cloud Workspace) -->
                     <div class="project-card" data-category="fullstack">
                         <div class="project-info">
                             <div class="project-tags">
                                 <span class="tag tag-js">React</span>
                                 <span class="tag tag-node">WebSockets</span>
+                                <span class="tag tag-docker">Docker</span>
                                 <span class="tag tag-db">Cloud Compiler</span>
                             </div>
                             <h3>CodeSphere</h3>
@@ -313,13 +333,64 @@
                         </div>
                     </div>
 
-                    <!-- Project 1: Hospital Management (Java) -->
+                    <!-- Project: EVault (Electronic Vault & Document Storage System) -->
+                    <div class="project-card" data-category="fullstack security">
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-ts">TypeScript</span>
+                                <span class="tag tag-security">Security</span>
+                                <span class="tag tag-crypto">Cryptography</span>
+                                <span class="tag tag-node">Node.js</span>
+                            </div>
+                            <h3>EVault</h3>
+                            <p>Secure Electronic Vault & Document Storage System. Provides end-to-end access control, encrypted document management, and confidential digital asset security.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Anup7-star/EVault" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Gate-Flow (Visitor & Pass Management) -->
+                    <div class="project-card" data-category="fullstack backend">
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-js">JavaScript</span>
+                                <span class="tag tag-express">Express</span>
+                                <span class="tag tag-backend">REST APIs</span>
+                                <span class="tag tag-node">Node.js</span>
+                            </div>
+                            <h3>Gate-Flow</h3>
+                            <p>Digital gate pass and visitor flow management web app. Streamlines visitor registration, pass validation workflows, security entry checks, and access logging.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Anup7-star/Gate-Flow" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Hashify (Cryptographic Hashing & Utility Tool) -->
+                    <div class="project-card" data-category="backend security">
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag tag-security">Security</span>
+                                <span class="tag tag-crypto">Cryptography</span>
+                                <span class="tag tag-js">JavaScript</span>
+                                <span class="tag tag-backend">Data Verification</span>
+                            </div>
+                            <h3>Hashify</h3>
+                            <p>A fast, client-side cryptographic hashing & data integrity utility. Enables instant generation of secure hashes (SHA-256, MD5, HMAC) and checksum verifications.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Anup7-star/Hashify" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Hospital Management (Java / Spring Boot) -->
                     <div class="project-card" data-category="backend">
                         <div class="project-info">
                             <div class="project-tags">
                                 <span class="tag tag-java">Java</span>
                                 <span class="tag tag-spring">Spring Boot</span>
-                                <span class="tag tag-db">MySQL</span>
+                                <span class="tag tag-postgres">PostgreSQL</span>
                             </div>
                             <h3>Hospital Management</h3>
                             <p>A comprehensive clinic management and doctor-patient appointment scheduling backend. Implements relational transaction controls and secure REST mapping pathways.</p>
@@ -329,14 +400,14 @@
                         </div>
                     </div>
 
-                    <!-- Project 2: NYX NLP Log Analyzer (Python) -->
-                    <div class="project-card" data-category="backend">
+                    <!-- Project: NYX NLP Log Analyzer (Python / Transformers) -->
+                    <div class="project-card" data-category="backend security">
                         <div class="project-info">
                             <div class="project-tags">
                                 <span class="tag tag-python">Python</span>
                                 <span class="tag tag-pytorch">PyTorch</span>
                                 <span class="tag tag-huggingface">Hugging Face</span>
-                                <span class="tag tag-db">Elasticsearch</span>
+                                <span class="tag tag-elasticsearch">Elasticsearch</span>
                             </div>
                             <h3>NYX: NLP Security Log Analyzer</h3>
                             <p>An NLP security analyzer transforming plain language commands into Elasticsearch DSL queries to compile security logs and output summary cards.</p>
@@ -346,7 +417,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 3: FIN Finance Tracking (Python) -->
+                    <!-- Project: FIN Finance Tracking (Python) -->
                     <div class="project-card" data-category="backend">
                         <div class="project-info">
                             <div class="project-tags">
@@ -357,22 +428,6 @@
                             <p>A Python data script built to organize transaction rows, flag monthly spending outliers, and draw basic graphic budget charts.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Anup7-star/FIN-finance-tracking-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: FitCheck AI (Full-Stack) -->
-                    <div class="project-card" data-category="fullstack">
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="tag tag-js">JavaScript</span>
-                                <span class="tag tag-python">MediaPipe</span>
-                                <span class="tag tag-db">WebAssembly</span>
-                            </div>
-                            <h3>FitCheck AI</h3>
-                            <p>An AI-powered, real-time workout tracking and posture analysis web application. Natively tracks 33 body joints at 30-60 FPS in the browser, providing visual skeleton overlays and Web Audio synth warnings.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/Anup7-star/FitCheck" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Github Code"><i data-lucide="github"></i> Code</a>
                             </div>
                         </div>
                     </div>

@@ -870,6 +870,12 @@ main {
     border-color: var(--color-gold);
 }
 
+.filter-btn[data-filter="security"].active {
+    color: var(--bg-color);
+    background-color: var(--color-sage);
+    border-color: var(--color-sage);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -934,13 +940,17 @@ main {
     background-color: rgba(93, 122, 104, 0.08);
     color: var(--color-sage);
 }
-.tag-js, .tag-html, .tag-css, .tag-fullstack {
+.tag-js, .tag-html, .tag-css, .tag-fullstack, .tag-ts, .tag-node, .tag-express {
     background-color: rgba(193, 143, 69, 0.08);
     color: var(--color-gold);
 }
-.tag-db, .tag-mysql, .tag-postgres, .tag-elasticsearch {
+.tag-db, .tag-mysql, .tag-postgres, .tag-elasticsearch, .tag-websockets, .tag-docker {
     background-color: rgba(74, 101, 114, 0.08);
     color: var(--color-blue);
+}
+.tag-security, .tag-crypto {
+    background-color: rgba(184, 91, 63, 0.08);
+    color: var(--color-terracotta);
 }
 
 .project-info h3 {
@@ -960,20 +970,45 @@ main {
 
 .project-links {
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 8px;
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    padding: 7px 14px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color-strong);
+    background-color: rgba(35, 32, 20, 0.03);
+    color: var(--text-primary);
+    transition: var(--transition);
+    line-height: 1;
 }
 
+.project-link:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    border-color: var(--text-primary);
+}
+
+.project-link svg,
 .project-link i {
-    font-size: 1rem;
+    width: 16px;
+    height: 16px;
+    stroke-width: 2;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* ==========================================================================
